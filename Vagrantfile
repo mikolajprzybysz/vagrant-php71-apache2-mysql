@@ -9,7 +9,7 @@ Vagrant.configure("2") do |config|
     sudo apt install -y python-software-properties
     sudo add-apt-repository -y ppa:ondrej/php
     sudo apt update -y
-    sudo apt install -y php7.1 libapache2-mod-php7.1 php7.1-xml
+    sudo apt install -y php7.1 libapache2-mod-php7.1 php7.1-xml php7.1-mysql
 
     # install and config apache2
     sudo apt install -y apache2
