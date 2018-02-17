@@ -4,7 +4,7 @@ with a Vagrant image.
 
 Apps shipped along:
 * php 7.1
-* apache2
+* apache 2.4
 * mysql 5.7
 
 Further features:
