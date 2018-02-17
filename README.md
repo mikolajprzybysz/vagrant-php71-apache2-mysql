@@ -1,4 +1,4 @@
-# Vagrant with php71 apache2 mysql57
+# Vagrant with php71 apache24 mysql57
 This project is suppose to be founding piece for any PHP service you quickly want to have up and runnig 
 with a Vagrant image. The idea is to have designated environment for each service that can be independently deployable and run.
 
