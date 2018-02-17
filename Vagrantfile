@@ -13,11 +13,11 @@ Vagrant.configure("2") do |config|
 
     # install and config apache2
     sudo apt install -y apache2
-    sudo cp -R /vagrant/apache2 /etc/
+    sudo ln -s /vagrant/apache2/sites-available/service.conf /etc/apache2/sites-available/service.conf
     sudo a2dissite 000-default.conf
     sudo a2ensite service.conf
     sudo a2enmod rewrite
-    sudo service apache2 reload
+    sudo service apache2 restart
 
     # install mysql
     sudo debconf-set-selections <<< 'mysql-server mysql-server/root_password password root123'
