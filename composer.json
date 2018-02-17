@@ -1,0 +1,10 @@
+{
+  "name": "mikolajprzybysz/vagrant-php71-apache24-mysql57",
+  "authors": [
+    {
+      "name": "Mikolaj Przybysz",
+      "email": "mikolaj.przybysz@gmail.com"
+    }
+  ],
+  "require": {}
+}
