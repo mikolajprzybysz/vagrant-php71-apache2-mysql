@@ -5,6 +5,10 @@ Vagrant.configure("2") do |config|
   config.vm.box = "ubuntu/xenial64"
   config.vm.network "forwarded_port", guest: 80, host: 80, host_ip: "127.0.0.1"
   config.vm.provision :shell, inline: <<-SHELL
+    
+    # set default directory after ssh
+    echo 'cd /vagrant' >> /home/vagrant/.bashrc 
+
     # install php7.1
     sudo apt install -y python-software-properties
     sudo add-apt-repository -y ppa:ondrej/php
