@@ -15,6 +15,12 @@ Vagrant.configure("2") do |config|
     sudo apt update -y
     sudo apt install -y php7.1 libapache2-mod-php7.1 php7.1-xml php7.1-mysql
 
+    # install php xdebug
+    #sudo apt install -y php7.1-xdebug
+    #sudo phpenmod xdebug
+    #sudo echo "xdebug.remote_enable=1" >> /etc/php/7.1/mods-available/xdebug.ini
+    #sudo echo "xdebug.remote_connect_back=1" >> /etc/php/7.1/mods-available/xdebug.ini
+
     # install and config apache2
     sudo apt install -y apache2
     sudo ln -s /vagrant/apache2/sites-available/service.conf /etc/apache2/sites-available/service.conf
